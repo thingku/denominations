@@ -1,0 +1,123 @@
+html, body, ul, li, div, p, a, h1, h2, h3, h4, h5, span, ol, table, tr, td, th {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	vertical-align: top;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.mainContainerHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+	padding: 10px 0;
+}
+.mainContainerHolder form {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.mainContainerHolder form > ul {
+	float: none;
+	overflow: hidden;
+	margin: auto;
+	display: block;
+	border: solid 1px #DDDDDD;
+	padding: 15px;
+}
+.mainContainerHolder form > ul li {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+	padding: 5px 0;
+}
+.mainContainerHolder form > ul li:last-child {
+	padding: 15px 0 5px;
+}
+.mainContainerHolder form > ul li .inputLabel {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+	line-height: 30px;
+	color: #444444;
+	font-weight: bold;
+}
+.mainContainerHolder form > ul li .inputHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.mainContainerHolder form > ul li input {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+	box-sizing:border-box;
+	line-height: 30px;
+	padding: 0 10px;
+	border: solid 1px #DDD;
+}
+.mainContainerHolder form > ul li button {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+	border: none;
+	border-radius: 2px;
+	color: #FFFFFF;
+	line-height: 30px;
+	background-color: #337ab7;
+}
+.hasError .errorInputHolder {
+	display: block;
+}
+.errorInputHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: none;
+	background-color:#e62726;
+}
+.errorInputHolder span {
+	padding: 0 10px;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 30px;	
+}
+.resultsTableHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+	border-top: solid 1px #555555;
+	border-left: solid 1px #555555;
+	border-right: solid 1px #555555;
+}
+.resultsTableHolder table {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+}
+.resultsTableHolder table th {
+	background-color:#555555;
+	color: #FFFFFF;
+	line-height: 30px;
+	padding: 0 10px;
+	font-size: 13px;
+	text-align: center;
+}
+.resultsTableHolder table td {
+	line-height: 30px;
+	padding: 0 10px;
+	border-bottom: solid 1px #555555;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	color: #444444;
+}
