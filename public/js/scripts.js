@@ -1,4 +1,19 @@
 (function () {
+	function checkForInvalidChars( params ) { // character checking
+		var invalidChars = [ 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','q','r','s','t','u','v','w','x','y','z' ];
+		var result;
+		params = params.toLowerCase();
+		params = params.replace(/[0-9]/g, '');
+		params = params.split('');
+		$.each( params, function( i,v ) {
+			if ( $.inArray( v, invalidChars ) !== -1 ) {
+				result = false;
+			} else {
+				result = true;
+			}
+		} );
+		return result;
+	}	
 	function getAmount() {
 		$('#submitBtn').click( function(e) {
 			e.preventDefault();
@@ -44,6 +59,6 @@
 			}
 			console.log( 'amount: ' + amount  );
 		} );
-}
-getAmount();
+	}
+	getAmount();
 })();
