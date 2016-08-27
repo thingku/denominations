@@ -3,7 +3,7 @@ Author: Rafon Amista
 
 Online examination
 
-- used node express as my framework
+- server running on node
 - used jshint to check the code quality
 - used jquery
 - used bootstrap for responsiveness
