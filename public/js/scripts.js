@@ -1,6 +1,6 @@
-(function () {
+
 	function checkForInvalidChars( params ) { // character checking
-		var invalidChars = [ 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','q','r','s','t','u','v','w','x','y','z' ];
+		var invalidChars = [ 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','q','r','s','t','u','v','w','x','y','z',',','/','?','[',']','(',')','+','=','`','-',':','"','<','>','!','@','#','$','%','^','&','*','{','}','|' ];
 		var result;
 		params = params.toLowerCase();
 		params = params.replace(/[0-9]/g, '');
@@ -66,4 +66,3 @@
 				getAmount();
 			}
 		});		
-	})();
