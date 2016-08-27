@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />	
+	<title>Online Exam</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+
+	<div class="container">
+		<section class="mainContainerHolder">
+			<form id="amountForm">
+				<ul class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<li>
+						<div class="errorInputHolder">
+							<span>Invalid amount!</span>
+						</div>
+						<div class="inputLabel">
+							Enter Amount:
+						</div>
+						<div class="inputHolder">
+							<input type="text" name="amount" id="amount" />
+						</div>
+					</li>
+					<li>
+						<div class="inputHolder">
+							<button id="submitBtn">Enter</button>
+						</div>
+					</li>	
+					<li class="hidden resultsList">
+						<div class="resultsTableHolder">
+							<table>
+								<thead>
+									<tr>
+										<th>Amount</th>
+										<th></th>
+										<th>Quantity</th>
+									</tr>
+								</thead>
+								<tbody id="resultsBody">								
+								</tbody>
+							</table>
+						</div>
+					</li>				
+				</ul>
+			</form>
+		</section>			
+	</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+<script type="text/javascript" src="js/scripts.js" ></script>
+</html>
