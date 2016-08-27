@@ -15,11 +15,9 @@
 		return result;
 	}	
 	function getAmount() {
-		$('#submitBtn').click( function(e) {
-			e.preventDefault();
-			$('#resultsBody').html( '' );				
-			var parentForm = '#'+$(this).closest( 'form' ).attr('id');
-			var amount = $( parentForm + ' input[name="amount"]' ).val().toLowerCase();
+		$('#resultsBody').html( '' );				
+		var parentForm = '#'+$('#resultsBody').closest( 'form' ).attr('id');
+		var amount = $( parentForm + ' input[name="amount"]' ).val().toLowerCase();
 			var amount2 = amount; // duplicate of amount
 			var denominations = [ 200,100,50,20,10,5,2,1 ]; // denominations array
 			var denominations2 = [ '£2','£1','50p','20p','10p','5p','2p','1p' ]; // equivalent denominations array
@@ -58,7 +56,14 @@
 				$('#resultsBody').append( template );											
 			}
 			console.log( 'amount: ' + amount  );
+		}
+		$('#submitBtn').click( function(e) {
+			e.preventDefault();
+			getAmount();
 		} );
-	}
-	getAmount();
-})();
+		$(document).keypress(function(e) {
+			if(e.which == 13) {
+				getAmount();
+			}
+		});		
+	})();
